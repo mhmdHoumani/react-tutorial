@@ -2,13 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Page2 from "./Components/Page Two/page2";
+// import Page2 from "./Components/Page Two/page2";
+import NavBar from "./Components/Navbar/navbar";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
+    <NavBar />
     <App />
-    <Page2 />
+    {/* <Page2 /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,0 +1,33 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(26, 53, 44);
+}
+
+.navTitle {
+  flex: 80%;
+  color: white;
+  font-size: xx-large;
+  margin-left: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+}
+
+.menuItem {
+  cursor: pointer;
+  margin-left: 1rem;
+  background-color: rgb(57, 117, 97);
+  padding: 1rem 3rem;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  list-style-type: none;
+}
+
+.menuItem:hover {
+  background-color: rgb(41, 85, 70);
+}
