@@ -4,6 +4,7 @@ import React from "react";
 import Card from "./Components/Cat Card/card";
 import Joke from "./Components/Joke/joke";
 import JokesData from "./Components/Joke/jokesData";
+import CardsData from "./Components/Cat Card/cardsData";
 // import img from "./Images/Cats/cat-image-1.jpg"
 
 function App() {
@@ -17,35 +18,20 @@ function App() {
       />
     );
   });
+  const cards = CardsData.map((card) => {
+    return (
+      <Card
+        img={card.img}
+        name={card.name}
+        phone={card.phone}
+        email={card.email}
+      />
+    );
+  });
   return (
     <div className="App">
       <header className="App-header">
-        <div className="cards">
-          <Card
-            img="cat-image-1.jpg"
-            name="Mr.Whiskerson"
-            phone="(212) 555-1234"
-            email="mr.whiskerson@catnap.meow"
-          />
-          <Card
-            img="cat-image-2.jpg"
-            name="Fluffykins"
-            phone="(212) 555-2345"
-            email="fluff@catnap.meow"
-          />
-          <Card
-            img="cat-image-3.jpg"
-            name="Felix"
-            phone="(212) 555-4567"
-            email="felix@catnap.meow"
-          />
-          <Card
-            img="cat-image-4.jpg"
-            name="Pumpkin"
-            phone="(212) 555-1357"
-            email="pumpkin@catnap.meow"
-          />
-        </div>
+        <div className="cards">{cards}</div>
         <div className="jokes">{jokes}</div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
