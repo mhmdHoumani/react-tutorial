@@ -18,10 +18,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <footer className="App-footer">
-        <p className="copy-right">Copyright&copy;</p>
-        <a href="#page2">Go to page2</a>
-      </footer>
     </div>
   );
 }

@@ -36,17 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.App-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  min-height: 10vh;
-  background-color: #61dafb;
-}
-
-.copy-right {
-  box-sizing: border-box;
-  font-size: x-large;
-}
