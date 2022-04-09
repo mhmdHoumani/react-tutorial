@@ -1,0 +1,36 @@
+.counter {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.counter--minus,
+.counter--plus {
+  font-size: 3rem;
+  color: whitesmoke;
+  background-color: gray;
+  border: 0;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+}
+
+.counter--minus {
+  left: 2rem;
+  letter-spacing: -1;
+}
+
+.counter--plus {
+  right: 2rem;
+}
+
+.counter--count {
+  background-color: whitesmoke;
+  color: black;
+  padding: 0rem 3.5rem;
+  border-radius: 50%;
+}
