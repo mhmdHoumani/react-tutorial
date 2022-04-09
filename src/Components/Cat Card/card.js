@@ -1,10 +1,11 @@
 import "./card.css";
+// import img from "../../../public/Images/Cats/"
 
 const Card = (props) => {
   return (
     <div className="card">
       <img
-        src={`../../Images/Cats/${props.img}`}
+        src={`../../../public/Images/Cats/${props.img}`}
         className="cat-img"
         alt="cats"
       />

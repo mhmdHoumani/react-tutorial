@@ -11,6 +11,7 @@ function App() {
   const jokes = JokesData.map((joke) => {
     return (
       <Joke
+        key={joke.id}
         upVotes={joke.upVotes}
         setup={joke.setup}
         punchline={joke.punchline}
@@ -21,6 +22,7 @@ function App() {
   const cards = CardsData.map((card) => {
     return (
       <Card
+        key={card.id}
         img={card.img}
         name={card.name}
         phone={card.phone}

@@ -2,7 +2,7 @@ import React from "react";
 import "./joke.css";
 
 const Joke = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="joke-container">
       <h6>Up Votes: ({props.upVotes})</h6>

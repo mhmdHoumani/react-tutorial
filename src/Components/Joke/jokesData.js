@@ -1,5 +1,6 @@
 let JokesData = [
   {
+    id: 1,
     // No Setup Display to the screen
     // setup="I got my daughter a fridge for her birthday"
     punchline: "I can't wait for the Spring Vacation.",
@@ -15,6 +16,7 @@ let JokesData = [
     ],
   },
   {
+    id: 2,
     // No Setup Display to the screen
     // setup="I got my daughter a fridge for her birthday"
     setup: "I got my daughter a fridge for her birthday",
@@ -31,6 +33,7 @@ let JokesData = [
     ],
   },
   {
+    id: 3,
     setup: "How did the hacker escape the police?",
     punchline: "He just ransomware!He just ransomware!",
     isPun: true,
@@ -45,6 +48,7 @@ let JokesData = [
     ],
   },
   {
+    id: 4,
     setup: "Why don't pirates travel on mountain roads?",
     punchline: "Scurvy",
     isPun: true,
@@ -59,6 +63,7 @@ let JokesData = [
     ],
   },
   {
+    id: 5,
     setup: "Why do bees stay in the hive in the winter?",
     punchline: "Swarm",
     isPun: false,
@@ -73,6 +78,7 @@ let JokesData = [
     ],
   },
   {
+    id: 6,
     setup: "What's the best thing about Switzerland?",
     punchline: "I don't know, but the flag is a big plus!",
     isPun: true,
