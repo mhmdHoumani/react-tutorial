@@ -5,14 +5,14 @@ const Card = (props) => {
   return (
     <div className="card">
       <img
-        src={`../../../public/Images/Cats/${props.img}`}
+        src={`../../../public/Images/Cats/${props.card.img}`}
         className="cat-img"
         alt="cats"
       />
-      <h3>{props.name}</h3>
+      <h3>{props.card.name}</h3>
       <br />
-      <p>{props.phone}</p>
-      <p>{props.email}</p>
+      <p>{props.card.phone}</p>
+      <p>{props.card.email}</p>
     </div>
   );
 };

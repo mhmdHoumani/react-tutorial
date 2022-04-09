@@ -9,26 +9,10 @@ import CardsData from "./Components/Cat Card/cardsData";
 
 function App() {
   const jokes = JokesData.map((joke) => {
-    return (
-      <Joke
-        key={joke.id}
-        upVotes={joke.upVotes}
-        setup={joke.setup}
-        punchline={joke.punchline}
-        downVotes={joke.downVotes}
-      />
-    );
+    return <Joke key={joke.id} joke={joke} />;
   });
   const cards = CardsData.map((card) => {
-    return (
-      <Card
-        key={card.id}
-        img={card.img}
-        name={card.name}
-        phone={card.phone}
-        email={card.email}
-      />
-    );
+    return <Card key={card.id} card={card} />;
   });
   return (
     <div className="App">
