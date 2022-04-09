@@ -1,0 +1,7 @@
+.joke-container {
+  border: 1px solid black;
+  width: 60rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
