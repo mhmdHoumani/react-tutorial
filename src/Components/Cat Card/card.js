@@ -1,18 +1,18 @@
 import "./card.css";
-// import img from "../../../public/Images/Cats/"
+// import img from "../../Images/Cats/cat-image-1.jpg";
 
 const Card = (props) => {
   return (
     <div className="card">
       <img
-        src={`../../../public/Images/Cats/${props.card.img}`}
+        src={`../../Images/Cats/${props.img}`}
         className="cat-img"
         alt="cats"
       />
-      <h3>{props.card.name}</h3>
+      <h3>{props.name}</h3>
       <br />
-      <p>{props.card.phone}</p>
-      <p>{props.card.email}</p>
+      <p>{props.phone}</p>
+      <p>{props.email}</p>
     </div>
   );
 };

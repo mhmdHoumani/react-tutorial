@@ -8,11 +8,13 @@ import CardsData from "./Components/Cat Card/cardsData";
 // import img from "./Images/Cats/cat-image-1.jpg"
 
 function App() {
+  //First way of sending the data
   const jokes = JokesData.map((joke) => {
     return <Joke key={joke.id} joke={joke} />;
   });
+  //Second way
   const cards = CardsData.map((card) => {
-    return <Card key={card.id} card={card} />;
+    return <Card key={card.id} {...card} />;
   });
   return (
     <div className="App">
