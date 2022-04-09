@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import NavBar from "./Components/Navbar/navbar";
+// import { NavBar2 } from "./Components/Navbar/navbar";
 import Footer from "./Components/Footer/footer";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
+    {/* <NavBar2 /> */}
     <App />
     <Footer />
   </React.StrictMode>,

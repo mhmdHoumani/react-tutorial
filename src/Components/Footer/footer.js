@@ -1,6 +1,7 @@
 import "./footer.css";
+// import React from "react";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="App-footer">
       <p className="copy-right">Copyright&copy;</p>
@@ -9,4 +10,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
