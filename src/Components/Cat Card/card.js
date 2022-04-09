@@ -1,14 +1,13 @@
 import "./card.css";
-import catImg1 from "../../Images/Cat Images/cat-image-1.jpg";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
-      <img src={catImg1} className="cat-img" alt="cat 1" />
-      <h3>Mr.Whiskerson</h3>
+      <img src={props.img} className="cat-img" alt="cats" />
+      <h3>{props.name}</h3>
       <br />
-      <p>(212) 555-1234</p>
-      <p>mr.whiskaz@catnap.meow</p>
+      <p>{props.phone}</p>
+      <p>{props.email}</p>
     </div>
   );
 };
