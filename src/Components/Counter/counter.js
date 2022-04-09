@@ -4,10 +4,10 @@ import "./counter.css";
 const Counter = () => {
   let [count, setCount] = React.useState(0);
   const increaseCount = () => {
-    setCount(count + 1);
+    setCount((prevCount) => prevCount + 1);
   };
   const decreaseCount = () => {
-    setCount(count - 1);
+    setCount((prevCount) => prevCount - 1);
   };
   return (
     <div className="counter">
