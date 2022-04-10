@@ -20,7 +20,7 @@ const Meme = () => {
     console.log(meme.randomImage);
   }
   return (
-    <main>
+    <main className="form-container">
       <div className="meme-form">
         <input
           id="topText"

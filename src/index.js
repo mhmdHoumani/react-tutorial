@@ -16,7 +16,8 @@ ReactDOM.render(
     <Footer />
     {/* <NavBar2 /> */}
     {/* <MemeHeader />
-    <Meme /> */}
+    <Meme />
+    <Footer /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

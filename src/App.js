@@ -7,7 +7,8 @@ import JokesData from "./Components/Joke/jokesData";
 import CardsData from "./Components/Cat Card/cardsData";
 import Counter from "./Components/Counter/counter";
 import Contact from "./Components/Contact/contact";
-// import img from "./Images/Cats/cat-image-1.jpg"
+import Box from "./Components/Box/box";
+import boxes from "./Components/Box/boxes";
 
 function App() {
   //First way of sending the data
@@ -18,11 +19,25 @@ function App() {
   const cards = CardsData.map((card) => {
     return <Card key={card.id} {...card} />;
   });
+
+  const [squares, setSquares] = React.useState(boxes);
+  const toggle = (id) => {
+    setSquares((prevSquares) =>
+      prevSquares.map((square) =>
+        square.id === id ? { ...square, on: !square.on } : square
+      )
+    );
+  };
+  const squareElements = squares.map((square) => (
+    <Box key={square.id} id={square.id} on={square.on} handleClick={toggle} />
+  ));
+
   return (
     <div className="App">
       <header className="App-header">
         <Counter />
         <Contact />
+        <div>{squareElements}</div>
         <div className="cards">{cards}</div>
         <div className="jokes">{jokes}</div>
         <img src={logo} className="App-logo" alt="logo" />
