@@ -3,11 +3,21 @@ import React from "react";
 import MemesData from "./memesData";
 
 const Meme = () => {
-  const [memeImage, setMemeImage] = React.useState("");
+  const [meme, setMeme] = React.useState({
+    topText: "Top Text",
+    bottomText: "Bottom Text",
+    randomImage: "https://i.imgflip.com/1ur9b0.jpg",
+  });
+
+  const [allMemeImages, setAllMemeImages] = React.useState(MemesData);
 
   function getMemeImage() {
-    setMemeImage(MemesData.data.memes[Math.floor(Math.random() * 100)].url);
-    console.log(memeImage);
+    const url = MemesData.data.memes[Math.floor(Math.random() * 100)].url;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImage: url,
+    }));
+    console.log(meme.randomImage);
   }
   return (
     <main>
@@ -31,7 +41,7 @@ const Meme = () => {
           className="form--generate"
           onClick={getMemeImage}
         />
-        <img src={memeImage} className="form--image" alt="Meme" />
+        <img src={meme.randomImage} className="form--image" alt="Meme" />
       </div>
     </main>
   );
