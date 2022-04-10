@@ -1,6 +1,7 @@
 import React from "react";
 import "./contact.css";
 import profile from "../../Images/Cats/cat-image-1.jpg";
+import Star from "../Star/star";
 
 const Contact = () => {
   const [contact, setContact] = React.useState({
@@ -11,10 +12,6 @@ const Contact = () => {
     isFavorite: false,
   });
 
-  let starIcon = contact.isFavorite
-    ? "star-icon-fill.png"
-    : "star-icon-empty.png";
-
   const toggleFav = () => {
     setContact((prevContact) => {
       return {
@@ -23,19 +20,13 @@ const Contact = () => {
       };
     });
     console.log(contact.isFavorite);
-    console.log(starIcon);
   };
 
   return (
     <section className="contact--card">
       <img src={profile} className="card--image" alt="profile" />
       <div className="card--info">
-        <img
-          src={`../../Images/icons/${starIcon}`}
-          className="card--favorite"
-          onClick={toggleFav}
-          alt="star"
-        />
+        <Star isFilled={contact.isFavorite} toggleClick={toggleFav} />
         <h2 className="card--name">
           {contact.firstName} {contact.lastName}
         </h2>

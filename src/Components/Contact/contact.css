@@ -9,7 +9,7 @@
 .card--info {
   text-align: start;
   width: fit-content;
-  margin-top: 5rem;
+  /* margin-top: 1rem; */
 }
 
 .card--image {
@@ -17,15 +17,15 @@
   width: 100%;
 }
 
-.card-favorite {
+.card--favorite {
   cursor: pointer;
   display: block;
-  width: 4rem;
-  height: 4rem;
+  width: 15%;
 }
 
 .card--name {
   font-size: 3.5rem;
+  margin: 1rem 0 3rem 0;
 }
 
 .card--contact {

@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <div className="card">
       <img
-        src={`../../Images/Cats/${props.img}`}
+        src={require(`../../Images/Cats/${props.img}`)}
         className="cat-img"
         alt="cats"
       />
