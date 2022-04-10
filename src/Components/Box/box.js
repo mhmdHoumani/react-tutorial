@@ -6,13 +6,7 @@ const Box = (props) => {
     backgroundColor: props.on ? "#222222" : "transparent",
   };
 
-  return (
-    <div
-      onClick={() => props.handleClick(props.id)}
-      style={styles}
-      className="box"
-    ></div>
-  );
+  return <div onClick={props.handleClick} style={styles} className="box"></div>;
 };
 
 export default Box;

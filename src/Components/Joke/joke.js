@@ -13,6 +13,11 @@ const Joke = (props) => {
   } else if (props.joke.upVotes === 10) {
     checker = "GOOD VOTES";
   }
+  const [isShown, setIsShown] = React.useState(false);
+  const toggleShown = () => {
+    setIsShown((prevShown) => !prevShown);
+  };
+
   return (
     <div className="joke-container">
       {checker && <div className="joke-badge">{checker}</div>}
@@ -28,8 +33,11 @@ const Joke = (props) => {
       </h3>
       {/* Or this way */}
       {/* {props.setup && <h3>Setup: {props.setup}</h3>} */}
-      <p>Punchline: {props.joke.punchline}</p>
+      {isShown && <p>Punchline: {props.joke.punchline}</p>}
       <h6>Down Votes: ({props.joke.downVotes})</h6>
+      <button className="toggleBtn" onClick={toggleShown}>
+        {isShown ? "Hide" : "Show"} Punchline
+      </button>
     </div>
   );
 };
