@@ -34,3 +34,17 @@
   padding: 0rem 3.5rem;
   border-radius: 50%;
 }
+
+.add--item {
+  padding: 10rem 2rem;
+}
+
+.add--btn {
+  border-radius: 5rem;
+  padding: 2rem;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: xx-large;
+}

@@ -6,13 +6,17 @@ import NavBar from "./Components/Navbar/navbar";
 // import { NavBar2 } from "./Components/Navbar/navbar";
 import Footer from "./Components/Footer/footer";
 import reportWebVitals from "./reportWebVitals";
+import MemeHeader from "./Components/Header/header";
+import Meme from "./Components/Meme/meme";
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
-    {/* <NavBar2 /> */}
     <App />
     <Footer />
+    {/* <NavBar2 /> */}
+    {/* <MemeHeader />
+    <Meme /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

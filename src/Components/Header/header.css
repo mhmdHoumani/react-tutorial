@@ -1,0 +1,23 @@
+.headerMeme {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(to right, #711f8d, #a818da);
+  color: white;
+  padding: 20px;
+}
+
+.trollFace {
+  height: 100%;
+  margin-right: 20px;
+}
+
+.headerMeme h2 {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.headerMeme h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
